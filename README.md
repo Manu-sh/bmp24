@@ -13,3 +13,5 @@ Italian resouces:
 * https://www.brescianet.com/appunti/vari/tracciati/bmpformat.htm
 * http://www.di.uniba.it/~ig/KubriK/BmpFormat.html
 * https://it.ccm.net/contents/696-il-formato-bmp
+
+###### Copyright © 2019, [Manu-sh](https://github.com/Manu-sh), s3gmentationfault@gmail.com. Released under the [MIT license](LICENSE).
