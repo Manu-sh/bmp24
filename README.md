@@ -1,4 +1,7 @@
 # bmp24
+<a href="https://i.ibb.co/FKgVM9B/mandelbrot.png">
+  <img src="https://i.ibb.co/FKgVM9B/mandelbrot.png" width="320px" height="200px" alt="" />
+</a>
 
 English resources:
 * https://engineering.purdue.edu/ece264/17au/hw/HW15
