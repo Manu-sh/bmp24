@@ -3,8 +3,6 @@
 #include "../common/utils.hpp"
 #include "../common/constants.hpp"
 
-#include <iostream>
-
 #include <cassert>
 #include <cstdlib>
 #include <fstream>

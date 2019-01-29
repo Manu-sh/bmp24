@@ -15,23 +15,22 @@ int main() try {
 
 	WinBitmap24 bmp(1920,1080);
 
-	size_t const ixsize = bmp.height();
-	size_t const iysize = bmp.width();
+	// slightly modified version of the algorithm present on rosette code: 
+	// http://rosettacode.org/wiki/Mandelbrot_set#C.2B.2B
 
-	// slightly modified version of the algorithm present on rosette code: http://rosettacode.org/wiki/Mandelbrot_set#C.2B.2B
-	double cxmin = -2.5, cxmax = 2.5, cymin = -2.5, cymax = 2.5;
-	unsigned max_i = 1000, i;
+	const uint32_t ixsize = bmp.height(), iysize = bmp.width(), max_i = 1000;
+	const double cxmin = -2.5, cxmax = 2.5, cymin = -2.5, cymax = 2.5;
 
 	#pragma omp parallel for
-	for (size_t ix = 0; ix < ixsize; ++ix) {
-		for (size_t iy = 0; iy < iysize; ++iy) {
+	for (uint32_t ix = 0; ix < ixsize; ++ix) {
+		for (uint32_t iy = 0, i; iy < iysize; ++iy) {
 
-			std::complex<double> c{
+			complex<double> c{
 				cxmin + ix / (ixsize-1.0) * (cxmax - cxmin), 
 				cymin + iy / (iysize-1.0) * (cymax - cymin)
 			}, z = 0;
 
-			for (i = 0; i < max_i && std::abs(z) < 4.0; ++i)
+			for (i = 0; i < max_i && abs(z) < 4.0; ++i)
 				z = cos(z * pow(c, 3));
 
 			const uint8_t col = (uint8_t)(z.real() * 1);
