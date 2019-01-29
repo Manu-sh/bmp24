@@ -1,3 +1,5 @@
+# bmp24
+
 English resources:
 * https://engineering.purdue.edu/ece264/17au/hw/HW15
 * http://www.brackeen.com/vga/bitmaps.html
