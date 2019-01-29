@@ -3,6 +3,9 @@
   <img src="https://i.ibb.co/FKgVM9B/mandelbrot.png" width="320px" height="200px" alt="" />
 </a>
 
+###### Implementation of windows bitmap file format (truecolor)
+
+
 English resources:
 * https://engineering.purdue.edu/ece264/17au/hw/HW15
 * http://www.brackeen.com/vga/bitmaps.html
