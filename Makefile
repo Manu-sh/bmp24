@@ -1,4 +1,4 @@
-CXXFLAGS=-std=c++17 -Wall -Wextra -fstack-protector-strong -pedantic -ffast-math -fopenmp
+CXXFLAGS=-std=c++17 -Wall -Wextra -fstack-protector-strong -pedantic -ffast-math -fopenmp -pipe
 CXXFLAGS += -Ofast -march=native
 LDLIBS=-lpthread -lstdc++fs
 .PHONY: all clean
