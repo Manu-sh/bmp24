@@ -34,6 +34,9 @@ class __attribute__((__packed__)) BITMAPFILEHEADER {
 };
 
 
+static_assert(sizeof(BITMAPFILEHEADER) == 14);
+
+
 inline BITMAPFILEHEADER & BITMAPFILEHEADER::setType(uint16_t bfType) {
 	return this->bfType = htole16(bfType), *this; 
 }

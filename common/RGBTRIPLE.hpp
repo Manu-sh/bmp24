@@ -7,3 +7,6 @@ struct __attribute__((__packed__)) RGBTRIPLE {
 	uint8_t rgbtGreen;
 	uint8_t rgbtRed;
 };
+
+
+static_assert(sizeof(RGBTRIPLE) == 3);
