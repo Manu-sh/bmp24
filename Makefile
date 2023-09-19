@@ -1,5 +1,5 @@
 CXXFLAGS=-std=c++17 -Wall -Wextra -fstack-protector-strong -pedantic -ffast-math -fopenmp -pipe
-CXXFLAGS += -Ofast -march=native
+CXXFLAGS += -Ofast -march=native -mtune=native
 LDLIBS=-lpthread -lstdc++fs
 .PHONY: all clean
 
